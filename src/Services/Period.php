@@ -34,7 +34,7 @@ class Period
      *
      * @var int
      */
-    protected $period = 1;
+    protected $period = 0;
 
     /**
      * Create a new Period instance.
@@ -57,7 +57,7 @@ class Period
             $this->start = $start;
         }
 
-        if ($count > 0) {
+        if ($count >= 0) {
             $this->period = $count;
         }
 
